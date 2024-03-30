@@ -14,6 +14,7 @@
 		C26DAED82BB8436B00ABE3F9 /* Test_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DAED72BB8436B00ABE3F9 /* Test_AssignmentTests.swift */; };
 		C26DAEE22BB8436B00ABE3F9 /* Test_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DAEE12BB8436B00ABE3F9 /* Test_AssignmentUITests.swift */; };
 		C26DAEE42BB8436B00ABE3F9 /* Test_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DAEE32BB8436B00ABE3F9 /* Test_AssignmentUITestsLaunchTests.swift */; };
+		C26DAEF12BB85E9300ABE3F9 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26DAEF02BB85E9300ABE3F9 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C26DAEDD2BB8436B00ABE3F9 /* Test AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26DAEE12BB8436B00ABE3F9 /* Test_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_AssignmentUITests.swift; sourceTree = "<group>"; };
 		C26DAEE32BB8436B00ABE3F9 /* Test_AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C26DAEF02BB85E9300ABE3F9 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				C26DAEC62BB8436900ABE3F9 /* Test_AssignmentApp.swift */,
 				C26DAEC82BB8436900ABE3F9 /* ContentView.swift */,
+				C26DAEF02BB85E9300ABE3F9 /* ContentViewModel.swift */,
 				C26DAECA2BB8436B00ABE3F9 /* Assets.xcassets */,
 				C26DAECC2BB8436B00ABE3F9 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				C26DAEC92BB8436900ABE3F9 /* ContentView.swift in Sources */,
 				C26DAEC72BB8436900ABE3F9 /* Test_AssignmentApp.swift in Sources */,
+				C26DAEF12BB85E9300ABE3F9 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
