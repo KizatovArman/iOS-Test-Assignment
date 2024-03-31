@@ -11,7 +11,7 @@
 ### Contents
 
 - [Description](#description)
-- [Frameworks](#frameworks&architecture)
+- [Frameworks](#frameworks)
 - [What I Learned](#what-i-learned)
 
 ## Description
@@ -26,7 +26,7 @@
 
 - MVVM architecture was applied.
 
-#### Frameworks&Architecture
+#### Frameworks
 
 - SwiftUI
 - ScrollViewReader
