@@ -3,7 +3,7 @@
 
 ## Screen shots
 <div style="width: 50%;min-height: 150px;float: left;">
-    <img src="https://github.com/KizatovArman/iOS-Test-Assignment/blob/feature/kizatov/main/Demonstration/output.gif" alt="Application Demo" width="400" height="800">
+    <img src="https://github.com/KizatovArman/iOS-Test-Assignment/blob/main/Demonstration/output.gif" alt="Application Demo" width="400" height="800">
 </div>
 
 ---
