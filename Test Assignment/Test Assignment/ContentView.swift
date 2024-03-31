@@ -13,10 +13,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.white.edgesIgnoringSafeArea(.all)
-            Spacer()
             VStack {
-                Spacer()
                 ScrollViewReader { scrollViewProxy in
+                    Spacer()
                     ScrollView(.vertical, showsIndicators: false) {
                         VStack(spacing: 20) {
                             ForEach(viewModel.flagEmojis, id: \.self) { flag in
@@ -25,13 +24,13 @@ struct ContentView: View {
                                     .frame(width: 120, height: 120)
                                     .background(Color.white)
                                     .id(flag)
-                                    .opacity(viewModel.currentFlag == flag ? 1.0 : 0.0)
                             }
                         }
                     }
                     .frame(width: 110, height: 110)
                     .border(Color.black, width: 5)
-//                    Spacer()
+                    .disabled(true)
+                    Spacer()
                     Button(action: {
                         viewModel.scrollToNextFlag(scrollViewProxy: scrollViewProxy)
                     }) {
@@ -46,10 +45,6 @@ struct ContentView: View {
             }
         }
     }
-}
-
-func printer() {
-    print("Hello")
 }
 
 struct ContentView_Previews: PreviewProvider {
