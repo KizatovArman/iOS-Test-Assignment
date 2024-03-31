@@ -1,5 +1,13 @@
 # iOS-Test-Assignment
 
+
+## Screen shots
+<div style="width: 50%;min-height: 150px;float: left;">
+    <img src="https://github.com/KizatovArman/iOS-Test-Assignment/blob/feature/kizatov/main/Demonstration/output.gif" alt="Application Demo" width="400" height="800">
+</div>
+
+---
+
 ### Contents
 
 - [Description](#description)
@@ -8,13 +16,13 @@
 
 ## Description
 
-- A simple test application that substitute current flag with next one.
+- A simple test application that displays flags one by one.
 
-- There is array of flag emojis [🇺🇸, 🇬🇧, 🇫🇷, 🇩🇪, 🇰🇿, 🇯🇵] that is displayed in 110 by 110 framed ScrollView.
+- There is an array of flag emojis [🇺🇸, 🇬🇧, 🇫🇷, 🇩🇪, 🇰🇿, 🇯🇵] that is displayed in 110 X 110 framed ScrollView.
 
 - By tapping "Hit me!" button next flag is presented.
 
-- SwiftUI and ScrollViewReader were used to programatically move ScrollView elements.
+- SwiftUI and ScrollViewReader were used to programatically move to ScrollView elements.
 
 - MVVM architecture was applied.
 
