@@ -9,13 +9,17 @@ import SwiftUI
 
 final class ContentViewModel: ObservableObject {
     let flagEmojis: [String] = ["🇺🇸", "🇬🇧", "🇫🇷", "🇩🇪", "🇰🇿", "🇯🇵"]
-    @Published var currentFlagIndex: Int = 0
+    @Published var currentIndex: Int = 0
     
     var currentFlag: String {
-        return flagEmojis[currentFlagIndex]
+        flagEmojis[currentIndex]
     }
     
-    func changeFlag() {
-        currentFlagIndex = (currentFlagIndex + 1) % flagEmojis.count
+    func scrollToNextFlag(scrollViewProxy: ScrollViewProxy) {
+        currentIndex = (currentIndex + 1) % flagEmojis.count
+        let flagId = flagEmojis[currentIndex]
+        withAnimation {
+            scrollViewProxy.scrollTo(flagId, anchor: .top)
+        }
     }
 }
