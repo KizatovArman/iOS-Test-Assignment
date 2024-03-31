@@ -14,33 +14,37 @@ struct ContentView: View {
         ZStack {
             Color.white.edgesIgnoringSafeArea(.all)
             VStack {
-                Spacer()
-                ZStack {
-                    Rectangle()
-                        .stroke(Color.black, lineWidth: 5)
-                        .frame(width: 120, height: 120)
-                    Text(viewModel.currentFlag)
-                        .font(.system(size: 50))
-                        .transition(.move(edge: .top))
-                }
-                Spacer()
-                Button(action: {
-                    viewModel.changeFlag()
-                }) {
-                    Text("Hit me!")
-                        .frame(width: UIScreen.main.bounds.width * 0.8, height: 30)
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(15)
+                ScrollViewReader { scrollViewProxy in
+                    Spacer()
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack(spacing: 20) {
+                            ForEach(viewModel.flagEmojis, id: \.self) { flag in
+                                Text(flag)
+                                    .font(.system(size: 50))
+                                    .frame(width: 120, height: 120)
+                                    .background(Color.white)
+                                    .id(flag)
+                            }
+                        }
+                    }
+                    .frame(width: 110, height: 110)
+                    .border(Color.black, width: 5)
+                    .disabled(true)
+                    Spacer()
+                    Button(action: {
+                        viewModel.scrollToNextFlag(scrollViewProxy: scrollViewProxy)
+                    }) {
+                        Text("Hit me!")
+                            .frame(width: UIScreen.main.bounds.width * 0.8, height: 30)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(15)
+                    }
                 }
             }
         }
     }
-}
-
-func printer() -> Void {
-    print("Hello world")
 }
 
 struct ContentView_Previews: PreviewProvider {
