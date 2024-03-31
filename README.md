@@ -26,7 +26,7 @@
 
 - MVVM architecture was applied.
 
-#### Frameworks&Architecture
+#### Frameworks
 
 - SwiftUI
 - ScrollViewReader
